@@ -16,6 +16,8 @@ python -m netdissect.server --address 0.0.0.0
 ```
 Then make sure that the `GANpaint_Request.py` code in the `scratch-blocks` directory is trying to reach the IP of the device that that command is being run from. Only then will the Scratch exension work properly
 
+_The following is information from the original Gandissect:_
+
 ## Overview
 
 <img src="doc/teaser.jpg" width="800px" clear="both" />
