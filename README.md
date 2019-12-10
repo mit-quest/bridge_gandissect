@@ -6,6 +6,16 @@
 
 This repo allows you to dissect a GAN model. It provides the dissection results as a static summary or as an interactive visualization. Try our interactive [GANPaint demo](http://gandissect.res.ibm.com/ganpaint.html?project=churchoutdoor&layer=layer4) to interact with GANs and draw images. 
 
+## Scratch
+
+This version of Gandissect is meant to accommodate the Scratch GANPaint extension. For more background on the extension, please go to [https://github.com/PTegmark/Scratch-GANPaint/blob/master/README.md](https://github.com/PTegmark/Scratch-GANPaint/blob/master/README.md)
+
+To allow the Scratch extension to communicate with this server, you must run:
+```bash
+python -m netdissect.server --address 0.0.0.0
+```
+Then make sure that the `GANpaint_Request.py` code in the `scratch-blocks` directory is trying to reach the IP of the device that that command is being run from. Only then will the Scratch exension work properly
+
 ## Overview
 
 <img src="doc/teaser.jpg" width="800px" clear="both" />
